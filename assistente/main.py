@@ -1,7 +1,6 @@
 import pyttsx3
 import datetime
 import speech_recognition as sr
-import pause
 import pyautogui as pa
 import time
 import pyperclip
@@ -123,7 +122,7 @@ if __name__ == "__main__":
                 if resposta and resposta.isdigit():
                     segundos = int(resposta)
                     falar(f"ok, voltarei em {segundos} segundos.")
-                    pause.seconds(segundos)
+                    time.sleep(segundos)
                     falar("Estou de volta, senhor!")
                     break
                 else:
