@@ -8,6 +8,7 @@ import pyperclip
 # inicia o TTS
 texto_fala = pyttsx3.init()
 
+
 def falar(audio):
     texto_fala.setProperty("rate", 195)
     voices = texto_fala.getProperty("voices")
